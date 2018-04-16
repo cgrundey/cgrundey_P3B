@@ -1,0 +1,47 @@
+// Custom Tests
+//		
+//		check = 1'b0;
+//		mode = 1'b0;
+//		direction = 1'b1;
+//		value = 4'b1001; //irrelevant for this test
+//		
+//		// shift right
+//		repeat(4) begin
+//			enable = 1'b1;
+//			#MYDEL;
+//			enable = 1'b0;
+//			#MYDEL;
+//		end
+//		// shifts PID right 4 times
+//		
+//		reset = 1'b0;
+//		#MYDEL;
+//		reset = 1'b1;
+//		#MYDEL;
+//		
+//		enable = 1'b1;
+//		#MYDEL;
+//		enable = 1'b0;
+//		#MYDEL;
+//		// shouldn't do anything when shifting 0 to the right
+//		
+//		mode = 1'b1;
+//		direction = 1'b0; 
+//		value = 1'b1;
+//		// increment by 1
+//		
+//		enable = 1'b1;
+//		#MYDEL;
+//		enable = 1'b0;
+//		#MYDEL;
+//		
+//		mode = 1'b0;
+//		// shift left 4 times
+//		
+//		repeat(4) begin
+//			enable = 1'b1;
+//			#MYDEL;
+//			enable = 1'b0;
+//			#MYDEL;
+//		end
+//		
